@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <title>Trivia</title>
+</head>
+
+<body>
+
+    <div class="container" style="width: 800px">
+
+        <div class="top-buffer1 row">
+            <div class="col">
+                <h1 class="text-center">Trivia!</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center" id="timer">00:00</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <button id="start" type="button" class="btn btn-outline-primary btn-lg">Start!</button>
+            </div>
+        </div>
+        <div id="questions">
+
+            
+            <div class="top-buffer2 row">
+                <div class="col">
+                    <h3 class="text-center text-white">How long does it take for the moon to orbit the earth?</h3>
+                </div>
+            </div>
+            <div class="top-buffer3 row">
+                <div class="col-4 text-center">
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                        <label class="text-white custom-control-label" for="customRadioInline1">28 days</label>
+                    </div>
+                </div>
+                <div class="col-4 text-center">
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                        <label class="text-white custom-control-label" for="customRadioInline2">One year</label>
+                    </div>
+                </div>
+                <div class="col-4 text-center">
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input">
+                        <label class="text-white custom-control-label" for="customRadioInline3">27 days</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="top-buffer3 row">
+                <div class="col">
+                    <div>
+                        <h3 class="text-white text-center">What river contains the largest white water rapids in the US?</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4 text-center">
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline4" name="customRadioInline2" class="custom-control-input">
+                        <label class="text-white custom-control-label" for="customRadioInline4">The Cloumbia</label>
+                    </div>
+                </div>
+                <div class="col-4 text-center">
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline5" name="customRadioInline2" class="custom-control-input">
+                        <label class="text-white custom-control-label" for="customRadioInline5">The Mississippi</label>
+                    </div>
+                </div>
+                <div class="col-4 text-center">
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline6" name="customRadioInline2" class="custom-control-input">
+                        <label class="text-white custom-control-label" for="customRadioInline6">The Colorado</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="top-buffer3 row">
+                <div class="col">
+                    <div>
+                        <h3 class="text-white text-center">What native American tribe created the original canal system in the
+                            Phoenix valley?</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4 text-center">
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline7" name="customRadioInline3" class="custom-control-input">
+                        <label class="text-white custom-control-label" for="customRadioInline7">The Hohokam</label>
+                    </div>
+                </div>
+                <div class="col-4 text-center">
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline8" name="customRadioInline3" class="custom-control-input">
+                        <label class="text-white custom-control-label" for="customRadioInline8">The Supai</label>
+                    </div>
+                </div>
+                <div class="col-4 text-center">
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline9" name="customRadioInline3" class="custom-control-input">
+                        <label class="text-white custom-control-label" for="customRadioInline9">The Diné</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="yourScore">
+            <div class="row">
+                <div class="col text-center">
+                    <h3>Your Score:</h3>
+                    <h6 id="right">Correct: </h6>
+                    <h6 id="wrong">Incorrect: </h6>
+                    <h6 id="unanswered">Unanswered: </h6>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <script type="text/javascript" src="assets/javascript/app.js">
+
+       
+
+    </script>
+
+
+    <!-- <script type="text/javascript" src="assets/javascript/app.js"></script> -->
+</body>
+
+</html>

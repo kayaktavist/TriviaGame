@@ -1,0 +1,17 @@
+body {
+background-image: url("../images/DSC_0963.jpg");
+/* height: 10%; */
+background-position: top;
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+.top-buffer1 {
+    margin-top: 80px;
+}
+.top-buffer2 {
+    margin-top: 150px;
+}
+.top-buffer3{
+    margin-top: 20 px
+}
